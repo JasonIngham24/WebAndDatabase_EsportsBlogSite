@@ -6,6 +6,35 @@
     <title>User Registration</title>
 </head>
 <body>
-    
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="post.html">Create Post</a>
+    </nav>
+
+    <h1>Register</h1>
+
+    <form>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label>You are a:</label><br>
+        <input type="radio" id="player" name="accountType" value="player">
+        <label for="player">Player</label><br>
+        <input type="radio" id="coach" name="accountType" value="coach">
+        <label for="coach">Coach</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
