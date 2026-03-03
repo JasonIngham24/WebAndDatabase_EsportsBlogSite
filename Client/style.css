@@ -182,19 +182,45 @@ p {
 }
 
 .page-login .form-container {
-    border-left: 4px solid #ff8533;
+    background: linear-gradient(135deg, #0a2a5e 0%, #0d3a7a 100%);
+    border: 2px solid #ff8533;
+    border-left: 6px solid #ff6600;
+    box-shadow: 0 8px 32px rgba(255, 133, 51, 0.3), 
+                0 0 20px rgba(255, 102, 0, 0.15);
 }
 
 .page-login .form-container label {
     color: #ff8533;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.page-login .form-container input[type="email"],
+.page-login .form-container input[type="password"] {
+    background-color: #001a4d;
+    border: 2px solid #ff8533;
+}
+
+.page-login .form-container input:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
 }
 
 .page-login .btn-submit {
-    background-color: #ff8533;
+    background: linear-gradient(90deg, #ff6600, #ff8533);
+    color: #001a4d;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
 }
 
 .page-login .btn-submit:hover {
-    background-color: #ff6600;
+    background: linear-gradient(90deg, #ff8533, #ffaa00);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
 }
 
 /* REGISTER PAGE */
@@ -207,20 +233,46 @@ p {
 }
 
 .page-register .form-container {
-    border-left: 4px solid #4d9fff;
+    background: linear-gradient(135deg, #0a2a5e 0%, #0d3a7a 100%);
+    border: 2px solid #4d9fff;
+    border-left: 6px solid #ff6600;
+    box-shadow: 0 8px 32px rgba(77, 159, 255, 0.3), 
+                0 0 20px rgba(255, 102, 0, 0.15);
 }
 
 .page-register .form-container label {
-    color: #4d9fff;
+    color: #ff6600;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.page-register .form-container input[type="text"],
+.page-register .form-container input[type="email"],
+.page-register .form-container input[type="password"] {
+    background-color: #001a4d;
+    border: 2px solid #4d9fff;
+}
+
+.page-register .form-container input:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
 }
 
 .page-register .btn-submit {
-    background-color: #4d9fff;
+    background: linear-gradient(90deg, #ff6600, #ff8533);
     color: #001a4d;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
 }
 
 .page-register .btn-submit:hover {
-    background-color: #3388ff;
+    background: linear-gradient(90deg, #ff8533, #ffaa00);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
 }
 
 /* POST PAGE */
@@ -233,23 +285,44 @@ p {
 }
 
 .page-post .form-container {
-    border-left: 4px solid #ffaa00;
+    background: linear-gradient(135deg, #0a2a5e 0%, #0d3a7a 100%);
+    border: 2px solid #ffaa00;
+    border-left: 6px solid #ff6600;
+    box-shadow: 0 8px 32px rgba(255, 170, 0, 0.3), 
+                0 0 20px rgba(255, 102, 0, 0.15);
 }
 
 .page-post .form-container label {
     color: #ffaa00;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 .page-post .form-container textarea {
     min-height: 150px;
     resize: vertical;
+    background-color: #001a4d;
+    border: 2px solid #ffaa00;
+}
+
+.page-post .form-container textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
 }
 
 .page-post .btn-submit {
-    background-color: #ffaa00;
+    background: linear-gradient(90deg, #ff6600, #ffaa00);
     color: #001a4d;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 170, 0, 0.4);
 }
 
 .page-post .btn-submit:hover {
-    background-color: #ff9500;
+    background: linear-gradient(90deg, #ffaa00, #ffcc00);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5);
 }
