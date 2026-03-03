@@ -1,0 +1,255 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+/* Navigation bar with Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #16213e;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Navigation links styling */
+nav a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00d9ff;
+    color: #1a1a2e;
+}
+
+/* Heading styles */
+h1 {
+    color: #00d9ff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #b8b8b8;
+}
+
+/* Form container styling using class */
+.form-container {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form labels */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #00d9ff;
+}
+
+/* Form inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #0f3460;
+    border-radius: 5px;
+    background-color: #0f3460;
+    color: #eaeaea;
+    font-size: 1rem;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #00d9ff;
+}
+
+/* Submit button styling */
+.btn-submit {
+    background-color: #00d9ff;
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #00b8d9;
+    transform: translateY(-2px);
+}
+
+/* Radio button group styling */
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    display: inline;
+    margin-left: 8px;
+    color: #eaeaea;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #00d9ff;
+}
+
+/* Hero image styling */
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.2);
+}
+
+/* Main content wrapper */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* =============================================
+   PAGE-SPECIFIC STYLES
+   ============================================= */
+
+/* HOME PAGE */
+.page-home .main-content {
+    padding: 40px 20px;
+}
+
+.page-home .main-content h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #00d9ff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-home .main-content p {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+}
+
+/* LOGIN PAGE */
+.page-login .main-content {
+    padding: 30px 20px;
+}
+
+.page-login .main-content h1 {
+    color: #ff6b6b;
+}
+
+.page-login .form-container {
+    border-left: 4px solid #ff6b6b;
+}
+
+.page-login .form-container label {
+    color: #ff6b6b;
+}
+
+.page-login .btn-submit {
+    background-color: #ff6b6b;
+}
+
+.page-login .btn-submit:hover {
+    background-color: #ee5a5a;
+}
+
+/* REGISTER PAGE */
+.page-register .main-content {
+    padding: 30px 20px;
+}
+
+.page-register .main-content h1 {
+    color: #ffd93d;
+}
+
+.page-register .form-container {
+    border-left: 4px solid #ffd93d;
+}
+
+.page-register .form-container label {
+    color: #ffd93d;
+}
+
+.page-register .btn-submit {
+    background-color: #ffd93d;
+    color: #1a1a2e;
+}
+
+.page-register .btn-submit:hover {
+    background-color: #eec92c;
+}
+
+/* POST PAGE */
+.page-post .main-content {
+    padding: 30px 20px;
+}
+
+.page-post .main-content h1 {
+    color: #6bcb77;
+}
+
+.page-post .form-container {
+    border-left: 4px solid #6bcb77;
+}
+
+.page-post .form-container label {
+    color: #6bcb77;
+}
+
+.page-post .form-container textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.page-post .btn-submit {
+    background-color: #6bcb77;
+    color: #1a1a2e;
+}
+
+.page-post .btn-submit:hover {
+    background-color: #5ab866;
+}
