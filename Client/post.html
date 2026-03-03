@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Post</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-post">
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="register.html">Register</a> |
-        <a href="login.html">Login</a> |
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
         <a href="post.html">Create Post</a>
     </nav>
 
-    <h1>Create a Post</h1>
+    <main class="main-content">
+        <h1>Create a Post</h1>
 
-    <form>
-        <label for="postContent">Your Post:</label><br>
-        <textarea id="postContent" name="postContent" rows="5" cols="40"></textarea><br><br>
+        <form class="form-container">
+        <label for="postContent">Your Post:</label>
+        <textarea id="postContent" name="postContent" rows="5"></textarea>
 
-        <input type="submit" value="Submit Post">
-    </form>
+            <input type="submit" value="Submit Post" class="btn-submit">
+        </form>
+    </main>
 </body>
 </html>
