@@ -29,3 +29,6 @@ To provide esports teams and organizations with a dedicated social platform that
 - **Scrim Requests** – Coaches can post when their team is looking for other teams to practice against
 - **Find Opponents** – Browse available teams seeking scrimmage partners
 - **Competition Details** – Specify game titles, skill levels, and availability for matches
+
+## ERD and Business Rules
+![Esports Blog Site ERD](./Images/Esports%20Blog%20Site.pdf)
