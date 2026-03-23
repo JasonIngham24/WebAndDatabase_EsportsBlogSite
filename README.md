@@ -31,6 +31,6 @@ To provide esports teams and organizations with a dedicated social platform that
 - **Competition Details** – Specify game titles, skill levels, and availability for matches
 
 ## ERD and Business Rules
-![Entity-relationship diagram for Esports Blog](Images/Esports%20Blog%20Site.pdf "Esports Blog Site ERD")
+![Entity-relationship diagram for Esports Blog](/Images/Esports%20Blog%20Site.pdf "Esports Blog Site ERD")
 ## Relations
-![Relations Diagram](Images/EsportsBlog_Relations.pdf "Esports Blog Site Relations Diagram")
+![Relations Diagram](/Images/EsportsBlog_Relations.pdf "Esports Blog Site Relations Diagram")
