@@ -1,0 +1,32 @@
+{
+  "name": "web_server_project",
+  "version": "1.0.0",
+  "description": "Esport blog site designed for members as a hub to connect, share, coordinate events, and find competition",
+  "keywords": [
+    "Esports"
+  ],
+  "homepage": "https://github.com/JasonIngham24/WebAndDatabase_EsportsBlogSite#readme",
+  "bugs": {
+    "url": "https://github.com/JasonIngham24/WebAndDatabase_EsportsBlogSite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonIngham24/WebAndDatabase_EsportsBlogSite.git"
+  },
+  "license": "ISC",
+  "author": "Jason Ingham",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
