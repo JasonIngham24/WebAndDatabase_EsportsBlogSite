@@ -13,7 +13,7 @@ async function createTeamTable() {
     await con.query(sql)
 }
 
-createUserTable()
+createTeamTable()
 
 async function getAllTeams() {
     let sql = `
