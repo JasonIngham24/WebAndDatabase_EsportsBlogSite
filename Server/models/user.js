@@ -56,10 +56,10 @@ async function register(user){
 
 async function login(user){
   let cuser = await userExists(user.email)
-  if(!cuser) throw new Error("User does not exist")
+  if(!cuser) throw new Error("Incorrect username or password")
   
   let match = await bcrypt.compare(user.password, cuser.user_password)
-  if(!match) throw new Error("Incorrect password")
+  if(!match) throw new Error("Incorrect username or password")
 
   return cuser
 }
