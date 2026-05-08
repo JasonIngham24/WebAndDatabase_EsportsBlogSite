@@ -1,0 +1,45 @@
+###
+GET http://localhost:3000/users/getAllUsers
+
+###
+GET http://localhost:3000/users/getUser
+Content-Type: application/json
+
+{
+    "username": "DoeJ1"
+}
+
+###
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "username": "DoeJ1",
+    "email": "user@example.com",
+    "password": "password123"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "password": "password123"
+}
+
+###
+DELETE http://localhost:3000/users/4
+
+###
+PUT http://localhost:3000/users/4
+Content-Type: application/json
+
+{
+    "firstName": "Bread",
+    "lastName": "Pitt",
+    "username": "NotBradPitt",
+    "email": "RealBreadPitt@Fakemail.com"
+}

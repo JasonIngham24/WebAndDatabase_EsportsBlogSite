@@ -326,3 +326,82 @@ p {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5);
 }
+
+/* USER MANAGEMENT PAGE */
+.page-user .main-content {
+    padding: 30px 20px;
+}
+
+.page-user h1 {
+    color: #4d9fff;
+    margin-bottom: 40px;
+}
+
+.page-user section {
+    background-color: #003087;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-left: 6px solid #ff6600;
+}
+
+.page-user h2 {
+    color: #ff6600;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #002266;
+    padding-bottom: 10px;
+}
+
+.page-user form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4d9fff;
+}
+
+.page-user form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #002266;
+    border-radius: 5px;
+    background-color: #001a4d;
+    color: #eaeaea;
+    font-size: 1rem;
+}
+
+.page-user form input:focus {
+    outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.page-user button {
+    background-color: #ff6600;
+    color: #001a4d;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-user button:hover {
+    background-color: #ff8533;
+    transform: translateY(-2px);
+}
+
+#delete-account-button {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+#delete-account-button:hover {
+    background-color: #ff3333;
+}

@@ -4,26 +4,21 @@ const app = express()
 
 app.use(express.json())
 
-const userRoutes = require("./server/routes/user")
+app.use(function(req,res, next){
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
+    next()
+})
+
+app.use(express.static(__dirname + "/public"))
+app.get('/', (req, res) => {res.sendFile(__dirname + "/Client/index.html")})
+
+const userRoutes = require("./Server/routes/user")
 app.use("/users", userRoutes)
-const PostRoutes = require("./server/routes/post")
-app.use("/posts", PostRoutes)
-const CommentRoutes = require("./server/routes/comment")
-app.use("/comments", CommentRoutes)
-const TeamRoutes = require("./server/routes/team")
-app.use("/teams", TeamRoutes)
-const PlayerRoutes = require("./server/routes/player")
-app.use("/players", PlayerRoutes)
-const EventRoutes = require("./server/routes/event")
-app.use("/events", EventRoutes)
-const ParticipantRoutes = require("./server/routes/event_participant")
-app.use("/participants", ParticipantRoutes)
-const CompetitionRoutes = require("./server/routes/competition")
-app.use("/competitions", CompetitionRoutes)
+const postRoutes = require("./Server/routes/post")
+app.use("/posts", postRoutes)
 
-// instead of having a domain name like, www.bestrecipes.com, 
-// we are using localhost:3500
-
-const PORT = process.env.PORT || 3500
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`))
