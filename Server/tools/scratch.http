@@ -2,22 +2,20 @@
 GET http://localhost:3000/users/getAllUsers
 
 ###
-GET http://localhost:3000/users/getUser
+POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "username": "DoeJ1"
+    "email": "inghamj1@newpaltz.edu",
+    "password": "Ji120667#"
 }
 
 ###
-POST http://localhost:3000/users/register
+POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "firstName": "John",
-    "lastName": "Doe",
-    "username": "DoeJ1",
-    "email": "user@example.com",
+    "email": "RealBreadPitt@Fakemail.com",
     "password": "password123"
 }
 
@@ -26,20 +24,37 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "email": "user@example.com",
+    "email": "The#1@Fakemail.com",
     "password": "password123"
 }
 
 ###
-DELETE http://localhost:3000/users/4
+GET http://localhost:3000/posts/getAllPosts
 
 ###
-PUT http://localhost:3000/users/4
+GET http://localhost:3000/posts/getPost/2
+
+###
+POST http://localhost:3000/posts/createPost
 Content-Type: application/json
 
 {
-    "firstName": "Bread",
-    "lastName": "Pitt",
-    "username": "NotBradPitt",
-    "email": "RealBreadPitt@Fakemail.com"
+    "user_id": 3,
+    "title": "My Second Post",
+    "content": "This is the content of my second post.",
+    "date": "2024-06-01"
 }
+
+###
+PUT http://localhost:3000/posts/updatePost/2
+Content-Type: application/json
+
+{
+    "user_id": 3,
+    "title": "Updated Post Title",
+    "content": "This is the updated content of the post.",
+    "date": "2024-06-02"
+}
+
+###
+DELETE http://localhost:3000/posts/deletePost/1

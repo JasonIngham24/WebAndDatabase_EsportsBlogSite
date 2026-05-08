@@ -18,9 +18,45 @@ createPostTable()
 
 async function getAllPosts() {
     let sql = `
-      SELECT * FROM POSTS;
+      SELECT p.*, u.user_name as username 
+      FROM POSTS p
+      JOIN USERS u ON p.user_id = u.user_id;
     `
-    await con.query(sql)
+    return await con.query(sql)
 }
 
-module.exports = { getAllPosts }
+async function getPost(post_id){
+    let sql = `
+        SELECT * FROM POSTS WHERE post_id = ?;
+    `
+    return await con.query(sql, [post_id])
+}
+
+async function createPost(post) {
+    let sql = `
+        INSERT INTO POSTS (post_title, post_content, post_date, user_id) 
+        VALUES (?, ?, ?, ?)
+    `
+    const result = await con.query(sql, [post.title, post.content, post.date, post.user_id]);
+    return { ...post, post_id: result.insertId };
+}
+
+async function updatePost(post_id, post) {
+    let sql = `
+        UPDATE POSTS
+        SET post_title = ?, post_content = ?, post_date = ?, user_id = ?
+        WHERE post_id = ?
+    `
+    await con.query(sql, [post.title, post.content, post.date, post.user_id, post_id]);
+    return await getPost(post_id);
+}
+
+async function deletePost(post_id) {
+    let sql = `
+        DELETE FROM POSTS 
+        WHERE post_id = ?;
+    `
+    return await con.query(sql, [post_id])
+}
+
+module.exports = { getAllPosts, getPost, createPost, updatePost, deletePost }
